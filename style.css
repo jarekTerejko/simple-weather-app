@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica Neue, Helvetica, Arial;
+    color: #fff;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0 15px;
+}
+
+header {
+    background-color: rgba(0, 0, 0, .9);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 3px 3px 3px rgba(12, 8, 8, 0.596);
+}
+
+header h1 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #1e90ff;
+    margin: 0;
+}
+
+.main {
+    min-height: calc(100vh - 144px);
+    text-align: center;
+    padding: 70px 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .05), rgba(0, 0, 0, .5)), url(bg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.search-form {
+    font-size: 18px;
+}
+
+.search-form label {
+    display: none;
+}
+
+.search-form input {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.search-form input[type=text] {
+    margin-top: 10px;
+    height: 40px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #1e90ff;
+    line-height: 40px;
+    opacity: .6;
+    transition: all .3s ease-out;
+}
+
+.search-form input[type=text]:focus {
+    opacity: 1;
+}
+
+.search-form button {
+    margin-top: 10px;
+    height: 40px;
+    padding: 10px;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #1e90ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    opacity: .6;
+    transition: all .3s ease-out;
+}
+
+#search button:hover {
+    background-color: #00bfff;
+    opacity: 1;
+}
+
+.weather {
+    padding: 30px;
+    max-width: 500px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    border-radius: 5px;
+}
+
+.country {
+    font-size: 14px;
+    color: #1e90ff;
+}
+
+.weather ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.weather ul li {
+    padding: 5px;
+}
+
+.alert {
+    color: #eb0404;
+    font-size: 24px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+    color: #1e90ff;
+}
+
+@media screen and (max-width: 450px) {
+
+    .search-form input[type=text],
+    .search-form button {
+        display: block;
+        width: 100%;
+    }
+}
