@@ -14,7 +14,7 @@ const displayWeather = (e) => {
     const cityName = weatherCity.value;
     const apiKey = 'd719249cdf9188c2b4935c8196104c58';
 
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${apiKey}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${apiKey}`)
         .then(res => res.json())
         .then(res => {
 
